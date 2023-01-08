@@ -1,21 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oskari sünnipäev</title>
-</head>
-<body>
-    <form netlify name="Sünnipäeva-vorm" action="/thanks.html">
 
- <label for="firstname">Eesnimi</label>
- <input type="text" name="firstname" id="firstname">
- <label for="lastname">Perenime esitäht</label>
- <input type="text" name="lastname" id="lastname">
- <label for="additional">lisateave</label>
- <input type="text" name="additional" id="additional">
- <button type="submit">Ok</button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <title>Oskari sünnipäev</title>
+  <link href="/dist/output.css"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div
+    class="w-full h-screen flex items-center justify-center bg-gray-400">
+    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+      netlify
+      name="Birthday Form"
+      action="/thanks.html">
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2"
+          for="firstname">
+          eesnimi
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="firstname"
+          name="firstname"
+          type="text"
+          placeholder="eesnimi">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2"
+          for="surname">
+          perekonnanime esitäht
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="surname"
+          name="surname"
+          type="text"
+          placeholder="perenime esitäht">
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-bold mb-2"
+          for="additional">
+          lisateave
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="additional"
+          name="additional"
+          type="text"
+          placeholder="lisateave">
+      </div>
+
+      <div class="flex items-center justify-between">
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          type="button">
+          Saada
+        </button>
+      </div>
     </form>
+  </div>
 </body>
+
 </html>
